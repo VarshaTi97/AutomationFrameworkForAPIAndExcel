@@ -1,0 +1,125 @@
+This is a maven project repository which contains the test scripts, page objects, and test data for testing scenarios for API and excel. It is a `hybrid driven framework` which incorporates data driven approach along with different design patterns like `Singleton and POM`.
+
+
+### Repo organization ###
+This repository contains the following directories:
+
+   ```
+   |____src/main/java
+   | |____constants
+   | |____exceptions
+   | |____pages
+   | |____pojoModels
+   | |____utils
+   |
+   |
+   |____src/test/java
+   | |____testScripts
+   |
+   |____resources
+   | |____testData
+   | |____testExecutor
+   |
+   ```
+
+1. **testScripts** - Contains java test automation scripts to implement test steps for various test scenarios under 
+excel and api application.
+   Examples:
+   ```
+   |____testScripts
+   | |____APIBaseClass.java
+   | |____APITests.java
+   | |____ExcelBaseClass.java
+   | |____ExcelTests.java
+   ```
+
+2. **pages** - API Tests are designed based on the Page Object Model (POM) design pattern. Under this model, each endpoint 
+has a corresponding `page class` containing `page methods` which perform operations on specific endpoint. 
+Each endpoint has a dedicated page object `.java` file available under this directory. 
+Every page class follows `Singleton` design pattern.
+   Examples:
+   ```
+   |____pages
+   | |____BasePage.java
+   | |____FilmsPage.java
+   | |____PeoplePage.java
+   | |____PlanetsPage.java
+   | |____ResidentsPage.java
+   | |____VehiclesPage.java
+   ```
+
+3. **pojoModels** - package contains Plain Old Java Objects (POJOs) used for API request  and response models, providing a simple and structured way to handle data serialization and deserialization.
+   Examples:
+   ```
+   |____pojoModels
+   | |____Films.java
+   | |____FilmsResponse.java
+   | |____People.java
+   | |____PeopleResponse.java
+   | |____Planet.java
+   | |____PlanetResponse.java
+   | |____Residents.java
+   | |____Vehicle.java
+   | |____VehiclesResponse.java 
+   ```
+
+4. **Other directories**
+   ```
+   | Directory         | Description                                                          |
+   | :---------------- | :------------------------------------------------------------------  |
+   | utils             | contains utility methods for excel and API requests                  |                            |
+   | constants         | contains data which is constant like filepaths, api endpoints        |
+   | exceptions        | contains custom exceptions to be used for excel operations           | 
+   | testdata          | contains excel sheets with sample test data                          |
+   ```
+
+### Getting Started ###
+
+Following are the instructions to set up a development environment to develop, execute and maintain automated tests.
+
+### Libraries Used in Framework ###
+
+Following are the list of libraries used while building the framework:
+
+   ```
+   | Library Name      | Version  | Description                                                                                                 |
+   | :---------------- | :------- | :-----------------------------------------------------------------------------------------------------------|
+   | java              | 17.0.2   | Programming language                                                                                        |
+   | testng            | 7.8.0    | Testing framework which supports test configured by annotations, data-driven testing, parametric tests, etc.|
+   | apache poi        | 5.3.0    | Java API To Access Microsoft Format Files, used for reading excel sheet data                                |
+   | restassured       | 5.2.0    | Automated driver management and other helper features for Selenium WebDriver in Java                        |
+   | jackson           | 2.18.2   | Automated driver management and other helper features for Selenium WebDriver in Java                        |
+   | surefire          | 5.2.0    | Automated driver management and other helper features for Selenium WebDriver in Java                        |
+   ```
+
+### Prerequisites ###
+
+1. Install IDE like IntelliJ IDEA/ Eclipse.
+
+2. Install git on the system to perform git commands.
+
+3. Download and setup java v17.0.2. Follow instructions on:
+
+### Environment setup ###
+
+1. Clone the code from repo
+    - `https://github.com/VarshaTi97/AutomationFrameworkForAPIAndExcel.git`
+
+2. Install dependencies
+    - Install required dependencies.
+      ```
+      cd AutomationFrameworkForAPIAndExcel/
+      mvn clean compile
+      ```
+3. Execute the testscripts
+      ```
+      mvn test
+      ```
+  
+### Execution Report ###
+
+- Execution report can be found inside the `target\surefire-reports` folder. Report file is `emailable-report.html` 
+
+### Author ###
+
+- Varsha Tiwari

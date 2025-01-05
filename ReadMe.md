@@ -1,4 +1,15 @@
-This is a maven project repository which contains the test scripts, page objects, and test data for testing scenarios for API and excel. It is a `hybrid driven framework` which incorporates data driven approach along with different design patterns like `Singleton and POM`.
+This is a Maven-based project repository designed for automated testing. It includes:
+
+*Test Scripts*: Contains the automated test cases for different scenarios.
+Page Objects: Implements the Page Object Model (POM) design pattern for better maintainability and reusability.
+Test Data: Utilizes data from sources like Excel for test scenarios.
+Key Features:
+Hybrid Driven Framework: Combines both data-driven and design pattern-based approaches.
+Design Patterns: Utilizes Singleton and Page Object Model (POM) design patterns for better structure and code management.
+Technologies Used:
+Apache POI Library: For automating test cases involving Excel data.
+RestAssured Library: For automating API test cases using Java.
+
 
 
 ### Repo organization ###
@@ -95,10 +106,12 @@ Following are the list of libraries used while building the framework:
 ### Prerequisites ###
 
 1. Install IDE like IntelliJ IDEA/ Eclipse.
+   
+2. Install maven command line.
 
-2. Install git on the system to perform git commands.
+4. Install git on the system to perform git commands.
 
-3. Download and setup java v17.0.2. Follow instructions on:
+5. Download and setup java v17.0.2. Follow instructions on:
 
 ### Environment setup ###
 

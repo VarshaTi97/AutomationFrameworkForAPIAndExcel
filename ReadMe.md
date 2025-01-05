@@ -107,9 +107,9 @@ Following are the list of libraries used while building the framework:
    | java              | 17.0.2   | Programming language                                                                                        |
    | testng            | 7.8.0    | Testing framework which supports test configured by annotations, data-driven testing, parametric tests, etc.|
    | apache poi        | 5.3.0    | Java API To Access Microsoft Format Files, used for reading excel sheet data                                |
-   | restassured       | 5.2.0    | Automated driver management and other helper features for Selenium WebDriver in Java                        |
-   | jackson           | 2.18.2   | Automated driver management and other helper features for Selenium WebDriver in Java                        |
-   | surefire          | 5.2.0    | Automated driver management and other helper features for Selenium WebDriver in Java                        |
+   | restassured       | 5.5.0    | A Java library for testing and automating RESTful API interactions, making it easier to validate responses. |
+   | jackson           | 2.18.2   | A popular library for parsing and binding JSON data to Java objects and vice versa.                         |
+   | surefire          | 3.1.2    | A plugin for Maven to run unit tests and generate test reports, typically used with frameworks likeTestNG   |
    ```
 
 ### Prerequisites ###

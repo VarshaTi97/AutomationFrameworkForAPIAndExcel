@@ -135,6 +135,7 @@ Following are the list of libraries used while building the framework:
       ```
       mvn test
       ```
+      or right-click test file and click on run
   
 ### Execution Report ###
 
